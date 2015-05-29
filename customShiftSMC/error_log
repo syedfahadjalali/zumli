@@ -1,0 +1,478 @@
+[19-Sep-2014 08:30:43 America/Denver] PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting ',' or ';' in /home/faditekd/public_html/aladiyat/aladiyat/api/general.php on line 15
+
+[19-Sep-2014 08:31:41 America/Denver] PHP Warning:  require_once(/home/faditekd/public_html/aladiyat/aladiyat/includes./dbConfig.php): failed to open stream: No such file or directory in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 3
+[19-Sep-2014 08:31:41 America/Denver] PHP Fatal error:  require_once(): Failed opening required '/home/faditekd/public_html/aladiyat/aladiyat/includes./dbConfig.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 3
+[25-Sep-2014 00:42:48 America/Denver] PHP Notice:  Undefined index: columnists_id in /home/faditekd/public_html/aladiyat/aladiyat/api/columnist.php on line 43
+[25-Sep-2014 00:42:48 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT ca.*, co...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/columnist.php(44): Db->executeQuery('SELECT ca.*, co...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(33): Columnist->viewColumnistsArticles(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewColumnistsArticles(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(89): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[26-Sep-2014 06:50:48 America/Denver] PHP Notice:  Undefined index: columnists_id in /home/faditekd/public_html/aladiyat/aladiyat/api/columnist.php on line 43
+[26-Sep-2014 06:50:48 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT ca.*, co...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/columnist.php(44): Db->executeQuery('SELECT ca.*, co...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(33): Columnist->viewColumnistsArticles(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewColumnistsArticles(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(89): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[29-Sep-2014 02:17:44 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'race_time' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT id AS ra...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(145): Db->executeQuery('SELECT id AS ra...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(75): Racecourse->viewAllRaceResult(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewAllRaceResult(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(89): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[29-Sep-2014 02:18:00 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'race_time' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT id AS ra...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(145): Db->executeQuery('SELECT id AS ra...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(75): Racecourse->viewAllRaceResult(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewAllRaceResult(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(89): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[29-Sep-2014 02:18:03 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'race_time' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT id AS ra...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(145): Db->executeQuery('SELECT id AS ra...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(75): Racecourse->viewAllRaceResult(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewAllRaceResult(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(89): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[29-Sep-2014 02:21:14 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'r.race_time' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT rs.`date...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(184): Db->executeQuery('SELECT rs.`date...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(82): Racecourse->viewSinglePlayerAllRacesPlayed(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewSinglePlayerAllRacesPlayed(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(89): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[01-Oct-2014 09:39:50 America/Denver] PHP Fatal error:  Undefined class constant 'POST_TYPE_PUBLICATIONS' in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 23
+[13-Oct-2014 07:06:24 America/Denver] PHP Parse error:  syntax error, unexpected 'json_encode' (T_STRING) in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 47
+[13-Oct-2014 07:22:27 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'rc.track_image' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT r.id as ...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(121): Db->executeQuery('SELECT r.id as ...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(69): Racecourse->viewRaceCourseRaces(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewRaceCourseRaces(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(102): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[13-Oct-2014 07:22:37 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'rc.track_image' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT r.id as ...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(121): Db->executeQuery('SELECT r.id as ...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(69): Racecourse->viewRaceCourseRaces(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewRaceCourseRaces(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(102): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[13-Oct-2014 07:22:40 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'rc.track_image' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT r.id as ...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(121): Db->executeQuery('SELECT r.id as ...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(69): Racecourse->viewRaceCourseRaces(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewRaceCourseRaces(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(102): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[13-Oct-2014 07:22:43 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'rc.track_image' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT r.id as ...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(121): Db->executeQuery('SELECT r.id as ...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(69): Racecourse->viewRaceCourseRaces(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewRaceCourseRaces(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(102): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[13-Oct-2014 08:10:22 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'track_image' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT id, name...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(15): Db->executeQuery('SELECT id, name...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(41): Racecourse->viewRaceCourses()
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewRaceCourses(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(102): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[13-Oct-2014 08:10:26 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'track_image' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT id, name...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(15): Db->executeQuery('SELECT id, name...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(41): Racecourse->viewRaceCourses()
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewRaceCourses(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(102): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[13-Oct-2014 08:10:28 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'track_image' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT id, name...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(15): Db->executeQuery('SELECT id, name...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(41): Racecourse->viewRaceCourses()
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewRaceCourses(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(102): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[13-Oct-2014 08:15:44 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'track_image' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT id, name...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(15): Db->executeQuery('SELECT id, name...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(41): Racecourse->viewRaceCourses()
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewRaceCourses(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(102): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[13-Oct-2014 08:26:38 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'track_image' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT id, name...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(15): Db->executeQuery('SELECT id, name...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(41): Racecourse->viewRaceCourses()
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewRaceCourses(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(102): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[13-Oct-2014 08:35:08 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'track_image' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT id, name...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(15): Db->executeQuery('SELECT id, name...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(41): Racecourse->viewRaceCourses()
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewRaceCourses(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(102): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[13-Oct-2014 08:35:11 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'track_image' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT id, name...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(15): Db->executeQuery('SELECT id, name...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(41): Racecourse->viewRaceCourses()
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewRaceCourses(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(102): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[13-Oct-2014 08:36:34 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION rc.concat does not exist' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT rc.id, r...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(15): Db->executeQuery('SELECT rc.id, r...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(41): Racecourse->viewRaceCourses()
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewRaceCourses(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(102): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[13-Oct-2014 08:37:35 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION rc.concat does not exist' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT rc.id, r...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(15): Db->executeQuery('SELECT rc.id, r...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(41): Racecourse->viewRaceCourses()
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewRaceCourses(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(102): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[13-Oct-2014 08:38:09 America/Denver] PHP Fatal error:  Call to undefined method Racecourse::responseReturn() in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 28
+[14-Oct-2014 00:38:39 America/Denver] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 45
+[14-Oct-2014 00:40:42 America/Denver] PHP Parse error:  syntax error, unexpected '$contact_us' (T_VARIABLE) in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 68
+[14-Oct-2014 02:08:34 America/Denver] PHP Notice:  Undefined index: race_course_id in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 167
+[14-Oct-2014 02:08:34 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT id as ra...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(168): Db->executeQuery('SELECT id as ra...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(75): Racecourse->viewRaceCourseRaces(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewRaceCourseRaces(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(114): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[14-Oct-2014 02:08:56 America/Denver] PHP Fatal error:  Class 'Racecourse' not found in /home/faditekd/public_html/aladiyat/aladiyat/api/page.php on line 74
+[14-Oct-2014 02:16:23 America/Denver] PHP Notice:  Undefined index: race_course_id in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 192
+[14-Oct-2014 02:16:23 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT r.id as ...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(193): Db->executeQuery('SELECT r.id as ...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(82): Racecourse->viewAllRaceResult(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewAllRaceResult(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(114): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[14-Oct-2014 02:16:32 America/Denver] PHP Notice:  Undefined index: race_course_id in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 192
+[14-Oct-2014 02:16:32 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT r.id as ...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(193): Db->executeQuery('SELECT r.id as ...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(82): Racecourse->viewAllRaceResult(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewAllRaceResult(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(114): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[14-Oct-2014 02:16:50 America/Denver] PHP Notice:  Undefined index: race_course_id in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 192
+[14-Oct-2014 02:16:50 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT r.id as ...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(193): Db->executeQuery('SELECT r.id as ...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(82): Racecourse->viewAllRaceResult(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewAllRaceResult(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(114): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[14-Oct-2014 04:52:19 America/Denver] PHP Parse error:  syntax error, unexpected ',' in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 263
+[14-Oct-2014 04:53:06 America/Denver] PHP Parse error:  syntax error, unexpected '{' in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 273
+[14-Oct-2014 04:54:04 America/Denver] PHP Parse error:  syntax error, unexpected '{' in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 273
+[14-Oct-2014 05:44:46 America/Denver] PHP Parse error:  syntax error, unexpected '}' in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 278
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[14-Oct-2014 05:45:11 America/Denver] PHP Notice:  Undefined variable: month in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 282
+[15-Oct-2014 17:58:17 America/Denver] PHP Notice:  Undefined index: year in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 40
+[15-Oct-2014 19:06:26 America/Denver] PHP Notice:  Undefined index: year in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 40
+[15-Oct-2014 19:07:11 America/Denver] PHP Notice:  Undefined index: columnists_id in /home/faditekd/public_html/aladiyat/aladiyat/api/columnist.php on line 43
+[15-Oct-2014 19:07:11 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT ca.*, co...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/columnist.php(44): Db->executeQuery('SELECT ca.*, co...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(34): Columnist->viewColumnistsArticles(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewColumnistsArticles(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(114): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[16-Oct-2014 06:37:31 America/Denver] PHP Parse error:  syntax error, unexpected '!=' (T_IS_NOT_EQUAL) in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 76
+[17-Oct-2014 09:35:40 America/Denver] PHP Notice:  Undefined index: year in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 287
+[19-Oct-2014 08:36:12 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p.thumbnail_image' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT r.id,r.n...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(289): Db->executeQuery('SELECT r.id,r.n...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(107): Racecourse->race_course_calender(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->RaceCourseCalender(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(114): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[21-Oct-2014 03:05:07 America/Denver] PHP Notice:  Undefined index: race_course_id in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 39
+[21-Oct-2014 03:05:21 America/Denver] PHP Notice:  Undefined index: year in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 40
+[21-Oct-2014 06:05:18 America/Denver] PHP Warning:  Missing argument 1 for Publications::contact_us(), called in /home/faditekd/public_html/aladiyat/aladiyat/api/page.php on line 113 and defined in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 51
+[21-Oct-2014 06:05:18 America/Denver] PHP Notice:  Undefined variable: params in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 53
+[21-Oct-2014 06:05:18 America/Denver] PHP Notice:  Undefined index:  in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 53
+[21-Oct-2014 06:05:18 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:330
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(330): PDO->query('SELECT phone_nu...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php(54): Db->execute('SELECT phone_nu...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(113): Publications->contact_us()
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->contact_us(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(120): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 330
+[21-Oct-2014 06:11:36 America/Denver] PHP Notice:  Undefined index: language in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 37
+[21-Oct-2014 06:11:36 America/Denver] PHP Notice:  Undefined index:  in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 37
+[21-Oct-2014 06:11:36 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:330
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(330): PDO->query('SELECT id, titl...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php(38): Db->execute('SELECT id, titl...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(101): Publications->about_us(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->about_us(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(120): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 330
+[21-Oct-2014 06:12:01 America/Denver] PHP Notice:  Undefined index: language in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 37
+[21-Oct-2014 06:12:01 America/Denver] PHP Notice:  Undefined index:  in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 37
+[21-Oct-2014 06:12:01 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:330
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(330): PDO->query('SELECT id, titl...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php(38): Db->execute('SELECT id, titl...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(101): Publications->about_us(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->about_us(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(120): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 330
+[21-Oct-2014 06:26:52 America/Denver] PHP Notice:  Undefined index: language in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 37
+[21-Oct-2014 06:26:52 America/Denver] PHP Notice:  Undefined index:  in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 37
+[21-Oct-2014 06:26:52 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:330
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(330): PDO->query('SELECT id, titl...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php(38): Db->execute('SELECT id, titl...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(101): Publications->about_us(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->about_us(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(120): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 330
+[21-Oct-2014 06:27:13 America/Denver] PHP Notice:  Undefined index: language in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 37
+[21-Oct-2014 06:27:13 America/Denver] PHP Notice:  Undefined index:  in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 37
+[21-Oct-2014 06:27:13 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:330
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(330): PDO->query('SELECT id, titl...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php(38): Db->execute('SELECT id, titl...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(101): Publications->about_us(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->about_us(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(120): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 330
+[21-Oct-2014 06:28:12 America/Denver] PHP Notice:  Undefined index: language in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 37
+[21-Oct-2014 06:28:12 America/Denver] PHP Notice:  Undefined index:  in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 37
+[21-Oct-2014 06:28:12 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:330
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(330): PDO->query('SELECT id, titl...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php(38): Db->execute('SELECT id, titl...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(101): Publications->about_us(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->about_us(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(120): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 330
+[21-Oct-2014 06:34:28 America/Denver] PHP Notice:  Undefined index: language in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 37
+[21-Oct-2014 06:34:28 America/Denver] PHP Notice:  Undefined index:  in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 37
+[21-Oct-2014 06:34:28 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:330
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(330): PDO->query('SELECT id, titl...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php(38): Db->execute('SELECT id, titl...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(101): Publications->about_us(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->about_us(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(120): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 330
+[21-Oct-2014 06:41:01 America/Denver] PHP Notice:  Undefined index: language in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 37
+[21-Oct-2014 06:41:01 America/Denver] PHP Notice:  Undefined index:  in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 37
+[21-Oct-2014 06:41:01 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:330
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(330): PDO->query('SELECT id, titl...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php(38): Db->execute('SELECT id, titl...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(101): Publications->about_us(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->about_us(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(120): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 330
+[21-Oct-2014 06:41:42 America/Denver] PHP Notice:  Undefined index: language in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 53
+[21-Oct-2014 06:41:42 America/Denver] PHP Notice:  Undefined index:  in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 53
+[21-Oct-2014 06:41:42 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:330
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(330): PDO->query('SELECT phone_nu...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php(54): Db->execute('SELECT phone_nu...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(113): Publications->contact_us(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->contact_us(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(120): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 330
+[21-Oct-2014 06:41:50 America/Denver] PHP Notice:  Undefined index: language in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 53
+[21-Oct-2014 06:41:50 America/Denver] PHP Notice:  Undefined index:  in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 53
+[21-Oct-2014 06:41:50 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:330
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(330): PDO->query('SELECT phone_nu...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php(54): Db->execute('SELECT phone_nu...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(113): Publications->contact_us(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->contact_us(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(120): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 330
+[21-Oct-2014 07:03:47 America/Denver] PHP Warning:  Missing argument 1 for News::getNews(), called in /home/faditekd/public_html/aladiyat/aladiyat/api/page.php on line 20 and defined in /home/faditekd/public_html/aladiyat/aladiyat/api/news.php on line 12
+[21-Oct-2014 07:03:47 America/Denver] PHP Notice:  Undefined variable: params in /home/faditekd/public_html/aladiyat/aladiyat/api/news.php on line 14
+[21-Oct-2014 07:03:47 America/Denver] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/faditekd/public_html/aladiyat/aladiyat/api/general.php on line 90
+[21-Oct-2014 07:03:47 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'review_text' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT id, titl...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/news.php(15): Db->executeQuery('SELECT id, titl...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(20): News->getNews()
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->getNews(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(120): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[21-Oct-2014 07:04:35 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'review_text' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT id, titl...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/news.php(15): Db->executeQuery('SELECT id, titl...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(20): News->getNews(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->getNews(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(120): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[21-Oct-2014 08:02:57 America/Denver] PHP Notice:  Undefined variable: params in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 14
+[21-Oct-2014 08:02:57 America/Denver] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 14
+[21-Oct-2014 08:04:58 America/Denver] PHP Notice:  Undefined variable: params in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 14
+[21-Oct-2014 08:04:58 America/Denver] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 14
+[21-Oct-2014 08:05:29 America/Denver] PHP Notice:  Undefined variable: params in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 14
+[21-Oct-2014 08:05:29 America/Denver] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/faditekd/public_html/aladiyat/aladiyat/api/publications.php on line 14
+[21-Oct-2014 08:44:24 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM columnists_a' at line 1' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:308
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(308): PDO->query('SELECT id, name...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/columnist.php(24): Db->executeQuery('SELECT id, name...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(27): Columnist->viewColumnists(Array)
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewColumnists(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(120): RestServer->handle()
+#5 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#6 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 308
+[21-Oct-2014 10:21:11 America/Denver] PHP Notice:  Undefined variable: params in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 14
+[21-Oct-2014 10:21:11 America/Denver] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 14
+[21-Oct-2014 12:13:14 America/Denver] PHP Notice:  Undefined index: race_course_id in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 50
+[21-Oct-2014 12:13:14 America/Denver] PHP Notice:  Undefined index: year in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 51
+[21-Oct-2014 12:13:26 America/Denver] PHP Notice:  Undefined index: year in /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php on line 51
+[21-Oct-2014 12:14:06 America/Denver] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email_address' in 'field list'' in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php:330
+Stack trace:
+#0 /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php(330): PDO->query('SELECT title, s...')
+#1 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(109): Db->execute('SELECT title, s...')
+#2 /home/faditekd/public_html/aladiyat/aladiyat/api/racecourse.php(79): Racecourse->raceCourseContactUs('4', 'race_course_con...')
+#3 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(47): Racecourse->viewRaceCourseDetails(Array)
+#4 /home/faditekd/public_html/aladiyat/aladiyat/api/RestServer.php(33): Page->viewRaceCourseDetails(Array)
+#5 /home/faditekd/public_html/aladiyat/aladiyat/api/page.php(120): RestServer->handle()
+#6 /home/faditekd/public_html/aladiyat/aladiyat/index.php(3): require_once('/home/faditekd/...')
+#7 {main}
+  thrown in /home/faditekd/public_html/aladiyat/aladiyat/includes/db.php on line 330

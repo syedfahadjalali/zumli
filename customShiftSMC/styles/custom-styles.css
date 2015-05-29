@@ -1,0 +1,62 @@
+.content
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.form-group
+{
+	padding-left: 20px;
+	width: 70%;
+}
+
+#sidebar{
+	background-color: #C7B097;
+	margin-top: -20px;
+	margin-bottom: -20px;
+	list-style: none;
+}
+
+.menu
+{
+	text-decoration: none;
+	padding-top:10px;
+	
+}
+
+.msg-exceed
+{
+	margin-left: 20px;
+	font-size: small;
+	color:red;
+}
+
+.display-hide
+{
+	display: none;
+}
+
+#search_list_id {
+	position: absolute;
+	z-index: 9;
+	background: #f3f3f3;
+}
+
+#search_list_id li:hover {
+	background: #eaeaea;
+}
+
+tr.edit
+{
+	background-color:#686C70;
+}
+
+tr.eidt td span{
+	display: none;
+}
+#cke_45{
+	display:none !important;
+}
+#cke_53{
+	display:none !important
+}
